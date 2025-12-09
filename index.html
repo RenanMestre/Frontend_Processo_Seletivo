@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Processo Seletivo ScriptHadder</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/menu.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <header class="header">
+        <div class="logo">
+            <h2>Script<span>Hadder</span></h2>
+        </div>
+        <a href="login.html"><div class="user-info">
+            <i class='bx bx-user-circle'></i>
+            <span id="userName">Login</span>
+        </div></a>
+    </header>
+
+    <main class="container">
+        <section class="welcome-section">
+            <h1>Bem-vindo(a) ao Processo Seletivo da ScriptHadder!</h1>
+            <p class="subtitle">Prepare-se para uma jornada desafiadora e transformadora</p>
+        </section>
+
+        <section class="company-info">
+            <div class="info-card">
+                <i class='bx bx-buildings'></i>
+                <h3>Sobre a ScriptHadder</h3>
+                <p>A ScriptHadder é uma empresa inovadora especializada em soluções tecnológicas de ponta, 
+                   focada em transformação digital e desenvolvimento de software de alta performance. 
+                   Nosso time é composto por profissionais apaixonados por tecnologia e inovação.</p>
+            </div>
+        </section>
+
+        <section class="challenge-section">
+            <h2>Seu Desafio</h2>
+            <p class="challenge-subtitle">Demonstre suas habilidades através de desafios práticos e técnicos</p>
+            <div class="challenge-cards">
+                <div class="challenge-card">
+                    <div class="challenge-icon-wrapper">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h4>Desenvolvimento Full Stack</h4>
+                    <p>Ter capacidade de identificar melhorias e aplicar essas melhorias em código garantindo código limpo e funcional</p>
+                    <div class="challenge-badge">Nível: Developer</div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon-wrapper">
+                        <i class='bx bx-brain'></i>
+                    </div>
+                    <h4>Resolução de Problemas</h4>
+                    <p>Demonstrar capacidade analítica em desafios técnicos</p>
+                    <div class="challenge-badge">Nível: Analista</div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon-wrapper">
+                        <i class='bx bx-rocket'></i>
+                    </div>
+                    <h4>Performance e Qualidade</h4>
+                    <p>Entregar código limpo, eficiente e seguindo os padrões de segurança cibernética</p>
+                    <div class="challenge-badge">Nível: Hacker</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2>Tecnologias e Ferramentas</h2>
+            <p class="tech-subtitle">Stack tecnológico moderno para desenvolvimento de software de alta performance</p>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bxl-html5'></i>
+                    </div>
+                    <span class="tech-name">HTML5</span>
+                    <p class="tech-description">Estruturação semântica</p>
+                    <div class="tech-badge">Frontend</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bxl-css3'></i>
+                    </div>
+                    <span class="tech-name">CSS3</span>
+                    <p class="tech-description">Estilização avançada</p>
+                    <div class="tech-badge">Frontend</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                    <p class="tech-description">Interatividade dinâmica</p>
+                    <div class="tech-badge">Frontend</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bxl-php'></i>
+                    </div>
+                    <span class="tech-name">PHP</span>
+                    <p class="tech-description">Lógica de servidor</p>
+                    <div class="tech-badge tools">Backend</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bx-shield'></i>
+                    </div>
+                    <span class="tech-name">Coding Security</span>
+                    <p class="tech-description">Segurança de código</p>
+                    <div class="tech-badge security">Security</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrapper">
+                        <i class='bx bxl-python'></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                    <p class="tech-description">Automação e IA</p>
+                    <div class="tech-badge">Desktop</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Cronograma do Processo</h2>
+            <div class="timeline-container">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <i class='bx bx-calendar'></i>
+                        <h3>Calendário</h3>
+                    </div>
+                    <div id="calendar" class="calendar"></div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <i class='bx bx-time-five'></i>
+                        <h3>Relógio</h3>
+                    </div>
+                    <div class="clock-container">
+                        <div id="clock" class="clock"></div>
+                        <div id="date" class="date"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <i class='bx bx-hourglass'></i>
+                        <h3>Prazo do Desafio</h3>
+                    </div>
+                    <div class="deadline-info">
+                        <div class="deadline-item">
+                            <span class="label">Início:</span>
+                            <span id="startDate" class="value">08/12/2025 - 09:00</span>
+                        </div>
+                        <div class="deadline-item">
+                            <span class="label">Término:</span>
+                            <span id="endDate" class="value">15/12/2025 - 23:59</span>
+                        </div>
+                        <div class="countdown">
+                            <span class="label">Tempo Restante:</span>
+                            <div id="countdown" class="countdown-timer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-section">
+            <button class="btn-primary" onclick="window.location.href='login.html'">
+                <i class='bx bx-play'></i>
+                Iniciar Desafio
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 ScriptHadder. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
+</html>

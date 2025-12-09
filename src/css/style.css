@@ -1,0 +1,799 @@
+  /* Reset básico */
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #0d0d0d, #000000);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  }
+
+  /* ---------- GLOBAL ---------- */
+  section {
+  padding: 100px 40px;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+  .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  }
+
+  .section-header h2 {
+  font-size: 2.8rem;
+  color: #56e2e7;
+  margin-bottom: 10px;
+  }
+
+  .section-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #56e2e7, #067d8d) 1;
+  }
+
+
+  .navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  }
+
+  .hamburguer{
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 15px;
+  }
+
+  .logo h2 {
+    color: white;
+    position: relative;
+    left: 40%;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+
+  .logo span {
+  color: #56e2e7;
+  }
+
+  .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  }
+
+  .nav-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  }
+
+  .nav-menu a:hover {
+  color: #56e2e7;
+  }
+
+  /* ---------- HERO ---------- */
+/* Fundo Hero com gradiente animado */
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 100px 10%;
+  background: linear-gradient(-45deg, #68bb73, #56e2e7, #ffffff, #067d8d);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  border-radius: 0 0 80px 80px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero-split.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hero Text refinado */
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  animation: fadeSlideUp 1s ease;
+  color: black;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botões Hero */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero-buttons .btn-primary {
+  background: linear-gradient(135deg, #067d8d, #56e2e7);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 120, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 120, 212, 0.45);
+}
+
+.hero-buttons .btn-outline {
+  border: 2px solid #067d8d;
+  color: #067d8d;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-outline:hover {
+  background: #067d8d;
+  color: #fff;
+}
+
+
+.learning-paths {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Card */
+
+.path-card {
+  background: linear-gradient(135deg, #ffffff, #f0fdfd);
+  border: 2px solid #e0f7f7;
+  border-radius: 16px;
+  padding: 30px 20px;
+  flex: 1 1 30%;
+  min-width: 280px;
+  max-width: 32%;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.path-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(86,226,231,0.15) 0%, transparent 70%);
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.path-card:hover::before {
+  opacity: 1;
+}
+
+.path-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.path-card h3 {
+  margin-bottom: 15px;
+  color: #067d8d;
+  font-size: 1.4rem;
+}
+
+.path-card p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.path-card .btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.path-card .btn:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+  background: #001717;
+  padding: 60px 40px 30px;
+  }
+
+  .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  }
+
+  .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+
+  .footer-logo h3 {
+  margin: 0;
+  color: white;
+  font-size: 35px;
+  }
+
+  .footer-logo h3 span {
+  color: rgb(25, 183, 189);
+  margin-bottom: 15px;
+  }
+
+  .footer-logo img {
+  display: relative;
+  height: auto;
+  width: 45px;
+  }
+
+  .footer-section h4 {
+  color: #56e2e7;
+  margin-bottom: 15px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  }
+
+  .footer-section ul {
+  list-style: none;
+  padding: 0;
+  }
+
+  .footer-section ul li {
+  margin-bottom: 8px;
+  }
+
+  .social-links a {
+  color: #56e2e7;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  }
+
+  .social-links a:hover {
+  color: #fff;
+  }
+
+  .footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.9rem;
+  }
+
+  /* Botão para subir a tela */
+  .topo button {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: #2297c5;
+    color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 999;
+    display: none;
+  }
+
+  .topo button:hover{
+    background-color: aqua;
+  }
+
+  /* === RESPONSIVIDADE === */
+
+  /* Tablets e pequenos desktops (max-width: 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .logo img {
+    margin: -5px 0 0;
+  }
+
+  .navbar .nav-container {
+    padding: 15px 20px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Hero - layout em coluna */
+  .hero {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .hero-image {
+    font-size: 80px;
+    margin-top: 30px;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+  }
+
+  @media (max-width: 992px) {
+  .hero-split {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+    .image-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .image-container img {
+    height: auto;
+  }
+
+  .text-overlay {
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    max-width: 250px;
+  }
+
+  .text-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Team */
+  .team .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .teamSwiper {
+    padding: 0 10px;
+  }
+
+  .teamSwiper .swiper-slide {
+    width: 250px !important;
+    transform: scale(1);
+    filter: grayscale(0%);
+  }
+
+  .team-card {
+    height: 380px;
+  }
+
+  .team-photo img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .team .section-header p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  /* Navbar mobile refinada */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(10, 30, 40, 0.98);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 90vw;
+    max-width: 340px;
+    box-shadow: 0 8px 24px rgba(86, 226, 231, 0.18);
+    border-radius: 0 0 16px 16px;
+    z-index: 1000;
+    padding: 1.2rem 2rem;
+    gap: 18px;
+    animation: fadeInMenu 0.3s;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    animation: fadeInMenu 0.3s ease forwards;
+  }
+
+  .nav-menu a {
+    color: #56e2e7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    text-align: left;
+  }
+
+  .nav-menu a:hover {
+    background: #1a3a4a;
+    color: #fff;
+  }
+  /* Hamburger refinado */
+  .hamburguer {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .hamburguer span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #56e2e7 0%, #0078d4 100%);
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: 0.25s;
+    position: relative;
+  }
+
+  /* Hamburger para X quando ativo */
+  .hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .hamburguer.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+  /* Smartphones e telas pequenas (max-width: 600px) */
+@media (max-width: 600px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo img {
+    position: relative;
+    height: 35px;
+    width: 35px;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    position: relative;
+  }
+
+  .logo h2 span {
+    color: #56e2e7;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .nav-menu {
+    display: none; /* esconder menu para implementar hamburger depois */
+  }
+
+  .hamburger {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  .logo h2 {
+    left: 0;
+    font-size: 1.2rem;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About */
+  .about-text h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team */
+  .teamSwiper .swiper-slide {
+    width: 90vw !important;
+  }
+
+  .team-card {
+    width: 90vw !important;
+    height: auto;
+  }
+
+  /* Contact */
+  .contact-info, .contact-form {
+    min-width: 100%;
+  }
+
+  /* Footer */
+  .footer-logo h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer-logo img {
+    width: 35px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-overlay {
+    position: static;
+    background: transparent;
+    color: #fff;
+    max-width: 100%;
+    padding: 10px 0;
+    margin-top: -40px;
+  }
+
+  .text-overlay h3 {
+    font-size: 1.1rem;
+    color: #56e2e7;
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  }
+
+  /* Adicione esta media query para telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+  section, .diferenciais, .ofertas, .catalogo, .avaliacoes {
+    padding: 40px 10px;
+  }
+  .btn, .oferta-card button {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+  .footer-logo h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Team */
+  .team .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .teamSwiper .swiper-slide {
+    width: 90vw !important;
+    transform: scale(1);
+  }
+
+  .team-card {
+    height: 350px;
+  }
+
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .overlay {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .janela-descricao {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .janela-descricao p {
+    font-size: 0.95rem;
+  }
+
+  .team-photo img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+  /* Ajuste para garantir que imagens não ultrapassem o container */
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
+
+  /* Corrija o logo para não sobrepor o texto em telas pequenas */
+@media (max-width: 600px) {
+  .logo img {
+    position: static;
+    height: 35px;
+    width: 35px;
+    margin-right: 8px;
+  }
+  .logo h2 {
+    left: 0;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+}
+
+  /* Ajuste para containers flex ficarem em coluna em telas pequenas */
+@media (max-width: 600px) {
+  .container,
+  .catalogo-content,
+  .diferenciais-grid,
+  .ofertas-grid,
+  .avaliacoes-grid {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+  }
+  .nav-menu.mobile-active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(86,226,231,0.15);
+    padding: 20px 30px;
+    gap: 18px;
+    z-index: 1001;
+    animation: fadeInMenu 0.3s;
+  }
+@keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+}
+
+  /* Garante que cards ocupem toda a largura em telas pequenas */
+@media (max-width: 600px) {
+  .service-card,
+  .diferencial-box,
+  .oferta-card,
+  .avaliacao-card {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+}
+}

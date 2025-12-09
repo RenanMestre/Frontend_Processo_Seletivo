@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 - Desktop</title>
+    <link rel="stylesheet" href="src/css/candidato.css"> <!-- Certifique-se de ter o CSS -->
+    <script src="src/js/candidato.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#hero"><h2>Script<span>Hadder</span></h2>
+                    <img src="src/img/icone-sem-fundo.png" alt="Ícone"></a>
+                </div>
+                <ul class="nav-menu">
+                    <a href="#" class="logout" onclick="logout()">Sair</a>
+                </ul>
+                <div class="hamburguer" id="hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="trilha-devsecops" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fase 1: Desenvolvimento de sistemas</h2>
+                <p>Tornando a ideia em algo palpável e baixável</p>
+            </div>
+
+            <!-- História e Importância do DevSecOps -->
+            <div class="devsecops-historia">
+                <h2>🌍 Softwares</h2>
+                <p>
+                    Saber desenvolver websites é importante, mas além disso, se especializar em programação é ainda mais importante, pondendo se aprofundar
+                    em desenvolvimento mobile (aplicativos), desktop (softwares) e até segurança (hackers), por isso um cliente muito querido pela ScriptHadder,
+                    que se chama João, pediu a dois anos atrás um sistema web, porém viu a necessidade de um software, ou seja, sair da web e se 
+                    tortnar algo baixável no sistema operacional, o sistema é bem simples, é uma calculadora web, onde 2+2 é = 4. <br>
+                    Sua missão como dev é desenvolver essa atualização para o cliente, desenvolva um software de calculadora para computador, pode ser uma pequena tela. <br>
+                    O site desenvolvido para calculadora foi -> <a href="https://calculadora-digital.com.br/">Calculadora web</a>
+                    <br>
+                    <br>
+                    Você será <strong>avaliado</strong> em:
+                    <br>
+                    . Desenvolvimento de interfaces seguindo web;
+                    <br>
+                    . Experiência de usuário;
+                    <br>
+                    . Sistemas desktop;
+                    <br>
+                    . Linguagem Python;
+                    <br>
+                    . Desenvolvimento profissional;
+                    <br>
+                    . Qualidade de código.
+                </p>
+            </div>
+            <br>
+
+            <!-- Importância -->
+            <div class="devsecops-importancia">
+                <h2>⚡ Por que o DevSecOps é importante?</h2>
+                <p>
+                    Num cenário em que <strong>ciberataques crescem exponencialmente</strong>, empresas não podem mais se dar ao luxo de pensar em segurança apenas no final.  
+                    O DevSecOps garante que cada etapa — do <em>planejamento à manutenção</em> — tenha controles de segurança embutidos.
+                </p>
+                <ul>
+                    <li>✔ <strong>Redução de custos</strong>: corrigir falhas cedo é muito mais barato que em produção.</li>
+                    <li>✔ <strong>Velocidade com confiança</strong>: times lançam novas versões sem medo.</li>
+                    <li>✔ <strong>Compliance e auditoria</strong>: aderência a normas como LGPD, ISO 27001, PCI-DSS.</li>
+                    <li>✔ <strong>Resiliência</strong>: sistemas preparados para resistir a ataques.</li>
+                </ul>
+            </div>
+             <br>
+
+                <!-- Linha do tempo ilustrada -->
+                <div class="timeline">
+                    <h2>ETAPAS</h2>
+                    <div class="timeline-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png" alt="Requisitos">
+                    <h3>📐 Desenvolvimento</h3>
+                    <p>
+                        Analisando o sistema web, desenvolva ele em desktop (apenas a calculadora), seguindo padrão de cores e funcionalidades 
+                        necessárias para soma, subtração, adição e multiplicação.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" alt="Check" width="100"
+                    <h3>📐 Linguagem</h3>
+                    <p>
+                        Aqui, arquitetos de software desenham o sistema.  
+                        Padrões de projeto, diagramas e tecnologias são escolhidos.  
+                        <strong>Segurança by design</strong> deve ser prioridade.
+                    </p>
+                    <p>
+                        Imagine que você está projetando um castelo: não adianta erguer muralhas depois do ataque. 
+                        É no design que você cria os portões e mecanismos de defesa.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="Implementação">
+                    <h3>💻 Implementação</h3>
+                    <p>
+                        Os desenvolvedores escrevem o código.  
+                        Aqui o DevSecOps introduz <strong>pipelines CI/CD seguros</strong>, 
+                        análise estática de código e automação de qualidade.
+                    </p>
+                    <ul>
+                        <li>✔ Code Review</li>
+                        <li>✔ Testes de segurança automatizados (SAST)</li>
+                        <li>✔ Contêineres com imagens seguras</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8099/8099448.png" alt="Testes">
+                    <h3>🧪 Testes</h3>
+                    <p>
+                        Antes de liberar para o usuário, tudo deve ser validado.  
+                        O DevSecOps garante <strong>testes funcionais, automatizados e de segurança</strong> (DAST, fuzzing, pentest).
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936632.png" alt="Implantação">
+                        <h3>🚀 Implantação</h3>
+                        <p>
+                            O software é colocado em produção.  
+                            Aqui entra o <strong>monitoramento contínuo</strong>, 
+                            pipelines automatizados e rollback em caso de falhas.
+                        </p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3079/3079161.png" alt="Manutenção">
+                    <h3>🔧 Manutenção</h3>
+                    <p>
+                        Depois da entrega, o ciclo não acaba.  
+                        Atualizações, correções de segurança e novos recursos garantem 
+                        que o sistema continue relevante e protegido.
+                    </p>
+                </div>
+
+                <!-- Conclusão do módulo -->
+                <div class="modulo-conclusao">
+                    <h2>🎯 Conclusão do Módulo</h2>
+                    <p>
+                    O <strong>SDLC</strong> não é apenas uma metodologia, mas uma mentalidade.  
+                    Com o <strong>DevSecOps</strong>, cada fase incorpora segurança e automação, 
+                    reduzindo riscos e acelerando entregas.
+                    </p>
+                    <p>
+                    Lembre-se: <em>"Segurança não é um produto, é um processo."</em>
+                    </p>
+                </div>
+                    
+                <!-- Botão de PDF -->
+                <div class="pdf-download">
+                    <button class="btn-pdf" onclick="baixarPDF()">📄 Baixar este módulo em PDF</button>
+                </div>
+
+                <div class="btn-group">
+                    <a href="websites.html" class="btn-secondary">⬅ Voltar</a>
+                    <a href="pratica-1.html" class="btn-primary">➡ Fase 3</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Script<span>Hadder</span></h3>
+                        <img src="src/img/icone-sem-fundo.png" alt="Logo">
+                    </div>
+                    <p>Transformando ideias em soluções digitais inovadoras. Sua parceira em tecnologia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Desenvolvimento Web</a></li>
+                        <li><a href="#services">Desenvolvimento Mobile</a></li>
+                        <li><a href="#services">Backend & APIs</a></li>
+                        <li><a href="#services">Consultoria</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#team">Nossa Equipe</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Portfólio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@devcodesolutions.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dev. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

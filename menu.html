@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Processo Seletivo ScriptHadder</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/menu.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <header class="header">
+        <div class="logo">
+            <h2>Script<span>Hadder</span></h2>
+        </div>
+        <div class="user-info" id="logoutArea" style="cursor:pointer;">
+            <i class='bx bx-user-circle'></i>
+            <span id="userName">Sair</span>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('logoutArea').addEventListener('click', function() {
+                // Aqui você pode limpar dados do usuário/localStorage/cookies se necessário
+                window.location.href = "login.html"; // Redireciona para a página de login
+            });
+        });
+    </script>
+
+    <main class="container">
+
+        <section class="scoreboard-section">
+            <h2>Placar de Pontuação</h2>
+            <p class="scoreboard-subtitle">Acompanhe seu progresso em tempo real</p>
+            <div class="scoreboard-container">
+                <div class="score-card">
+                    <div class="score-icon-wrapper">
+                        <i class='bx bx-trophy'></i>
+                    </div>
+                    <h3>Pontuação Total</h3>
+                    <div class="score-value" id="totalScore">0</div>
+                    <div class="score-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="totalProgress" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0 / 1000 pontos</span>
+                    </div>
+                </div>
+
+                <div class="score-card">
+                    <div class="score-icon-wrapper secondary">
+                        <i class='bx bx-code-block'></i>
+                    </div>
+                    <h3>Desafios Completos</h3>
+                    <div class="score-value secondary" id="completedChallenges">0</div>
+                    <div class="score-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Websites:</span>
+                            <span class="stat-value" id="websitesCompleted">0/3</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Desktop:</span>
+                            <span class="stat-value" id="desktopCompleted">0/2</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Backend:</span>
+                            <span class="stat-value" id="backendCompleted">0/2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="score-card">
+                    <div class="score-icon-wrapper tertiary">
+                        <i class='bx bx-medal'></i>
+                    </div>
+                    <h3>Nível Atual</h3>
+                    <div class="score-value tertiary" id="currentLevel">Iniciante</div>
+                    <div class="level-badges">
+                        <div class="badge-item active">
+                            <i class='bx bx-star'></i>
+                            <span>Iniciante</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class='bx bx-star'></i>
+                            <span>Intermediário</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class='bx bx-star'></i>
+                            <span>Avançado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="score-card">
+                    <div class="score-icon-wrapper quaternary">
+                        <i class='bx bx-time'></i>
+                    </div>
+                    <h3>Tempo Decorrido</h3>
+                    <div class="score-value quaternary" id="timeElapsed">0h 0m</div>
+                    <div class="time-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Início:</span>
+                            <span class="stat-value">08/12 09:00</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Última atividade:</span>
+                            <span class="stat-value" id="lastActivity">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="botao-iniciar">
+            <a href="websites.html"><button class="desafios">Bora hackear!</button></a>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Script<span>Hadder</span></h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 ScriptHadder. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
+</html>
