@@ -25,9 +25,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value.trim();
     const errorDiv = document.getElementById('loginError');
     const errorMsg = document.getElementById('loginErrorMsg');
-
     try {
-        const response = await fetch(process.env.API_LOGIN || "http://localhost:8080/api/login", {
+        const response = await fetch("http://72.60.61.93:8080/api/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",

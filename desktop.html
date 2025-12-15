@@ -15,16 +15,10 @@
             <div class="nav-container">
                 <div class="logo">
                     <a href="#hero"><h2>Script<span>Hadder</span></h2>
-                    <img src="src/img/icone-sem-fundo.png" alt="Ícone"></a>
                 </div>
                 <ul class="nav-menu">
                     <a href="#" class="logout" onclick="logout()">Sair</a>
                 </ul>
-                <div class="hamburguer" id="hamburguer">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
         </nav>
     </header>
@@ -32,7 +26,7 @@
     <section id="trilha-devsecops" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Fase 1: Desenvolvimento de sistemas</h2>
+                <h2>Fase 2: Debug de sistemas desktops</h2>
                 <p>Tornando a ideia em algo palpável e baixável</p>
             </div>
 
@@ -43,14 +37,14 @@
                     Saber desenvolver websites é importante, mas além disso, se especializar em programação é ainda mais importante, pondendo se aprofundar
                     em desenvolvimento mobile (aplicativos), desktop (softwares) e até segurança (hackers), por isso um cliente muito querido pela ScriptHadder,
                     que se chama João, pediu a dois anos atrás um sistema web, porém viu a necessidade de um software, ou seja, sair da web e se 
-                    tortnar algo baixável no sistema operacional, o sistema é bem simples, é uma calculadora web, onde 2+2 é = 4. <br>
-                    Sua missão como dev é desenvolver essa atualização para o cliente, desenvolva um software de calculadora para computador, pode ser uma pequena tela. <br>
-                    O site desenvolvido para calculadora foi -> <a href="https://calculadora-digital.com.br/">Calculadora web</a>
+                    tornar algo baixável no sistema operacional, o sistema é bem simples, é uma calculadora web, onde 2+2 é = 4. <br>
+                    Foi desenvolvido por programadores da ScriptHadder em python, porém ele menciona que o sistema não está funcionando como antes!
+                    Parece que alguém mexeu nos códigos e alterou a versão original da calculadora! Analise os códigos e ajuste os erros para voltar a funcionar o sistema.
                     <br>
                     <br>
                     Você será <strong>avaliado</strong> em:
                     <br>
-                    . Desenvolvimento de interfaces seguindo web;
+                    . Desenvolvimento de sistemas;
                     <br>
                     . Experiência de usuário;
                     <br>
@@ -58,17 +52,23 @@
                     <br>
                     . Linguagem Python;
                     <br>
-                    . Desenvolvimento profissional;
+                    . Lógica de programação;
                     <br>
-                    . Qualidade de código.
+                    . Qualidade de código;
+                    <br>
+                    . Testes de sistemas;
+                    <br>
+                    . Debug de sistemas.
+                    <div class=""></div>
                 </p>
             </div>
             <br>
 
             <!-- Importância -->
             <div class="devsecops-importancia">
-                <h2>⚡ Vídeo apoio</h2>
-                <video src="https://www.youtube.com/watch?v=5ctmK6fV1NQ"></video>
+                <h2>⚡ Foto apoio do sistema funcionando anteriormente</h2>
+                <a href="src/img/Calculadora.png"><img src="src/img/Calculadora.png" alt="Foto da calculadora"></a>
+                <a href="src/img/Calculadora_2.png"><img src="src/img/Calculadora_2.png" alt="Calculadora 2"></a>
             </div>
              <br>
 
@@ -144,86 +144,108 @@
 
                 <!-- Conclusão do módulo -->
                 <div class="modulo-conclusao">
-                    <h2>🎯 Conclusão do Módulo</h2>
+                    <h2>🎯 Material de apoio</h2>
                     <p>
-                    O <strong>SDLC</strong> não é apenas uma metodologia, mas uma mentalidade.  
-                    Com o <strong>DevSecOps</strong>, cada fase incorpora segurança e automação, 
-                    reduzindo riscos e acelerando entregas.
-                    </p>
-                    <p>
-                    Lembre-se: <em>"Segurança não é um produto, é um processo."</em>
+                    Clone o <a href="https://github.com/ScriptHadder/Desktop_processo_seletivo">repositório</a> que estará lá em linguagem python a calculadora
+                    desenvolvida e bugada.
                     </p>
                 </div>
-                    
-                <!-- Botão de PDF -->
-                <div class="pdf-download">
-                    <button class="btn-pdf" onclick="baixarPDF()">📄 Baixar este módulo em PDF</button>
+
+                <!-- Botão de Concluir -->
+                <style>
+                    .concluir-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 2rem 0;
+                    }
+                    .btn-concluir {
+                        background: linear-gradient(90deg, #6c63ff 0%, #4e54c8 100%);
+                        color: #fff;
+                        border: none;
+                        border-radius: 30px;
+                        padding: 0.8rem 2.5rem;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        box-shadow: 0 4px 16px rgba(76, 70, 255, 0.15);
+                        cursor: pointer;
+                        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+                        outline: none;
+                        margin-bottom: 1rem;
+                    }
+                    .btn-concluir:hover, .btn-concluir:focus {
+                        background: linear-gradient(90deg, #4e54c8 0%, #6c63ff 100%);
+                        transform: translateY(-2px) scale(1.04);
+                        box-shadow: 0 8px 24px rgba(76, 70, 255, 0.18);
+                    }
+                    .progress-bar-container {
+                        width: 100%;
+                        max-width: 350px;
+                        background: #e6e6fa;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 8px rgba(108, 99, 255, 0.08);
+                        height: 22px;
+                        margin-top: 0.5rem;
+                    }
+                    .progress-bar {
+                        height: 100%;
+                        background: linear-gradient(90deg, #6c63ff 0%, #4e54c8 100%);
+                        border-radius: 20px 0 0 20px;
+                        transition: width 1s cubic-bezier(.4,2,.6,1);
+                    }
+                </style>
+                <div class="concluir-container">
+                    <button class="btn-concluir" id="concluirDesafio">Concluir</button>
+                    <div class="progress-bar-container" style="display: none;">
+                        <div class="progress-bar" style="width: 0%;"></div>
+                    </div>
                 </div>
 
                 <div class="btn-group">
                     <a href="websites.html" class="btn-secondary">⬅ Voltar</a>
-                    <a href="pratica-1.html" class="btn-primary">➡ Fase 3</a>
+                    <a href="backend.html" class="btn-primary">➡ Fase 3</a>
+                    <a href="menu.html" class="btn-primary">Início</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Script<span>Hadder</span></h3>
-                        <img src="src/img/icone-sem-fundo.png" alt="Logo">
-                    </div>
-                    <p>Transformando ideias em soluções digitais inovadoras. Sua parceira em tecnologia.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li><a href="#services">Desenvolvimento Web</a></li>
-                        <li><a href="#services">Desenvolvimento Mobile</a></li>
-                        <li><a href="#services">Backend & APIs</a></li>
-                        <li><a href="#services">Consultoria</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#team">Nossa Equipe</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                        <li><a href="#">Portfólio</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                        <p><i class="fas fa-envelope"></i> contato@devcodesolutions.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
-                    </div>
-                </div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Script<span>Hadder</span></h3>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dev. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="https://scripthadder.com.br">Sobre nós</a>
+                <a href="termos.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 ScriptHadder. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('concluirDesafio').addEventListener('click', function() {
+                const completedChallenges = JSON.parse(localStorage.getItem('completedChallenges')) || {
+                    websites: 0,
+                    desktop: 0,
+                    backend: 0
+                };
+                completedChallenges.desktop += 1;
+                localStorage.setItem('completedChallenges', JSON.stringify(completedChallenges));
+
+                const totalScore = parseInt(localStorage.getItem('totalScore') || '0', 10) + 150;
+                localStorage.setItem('totalScore', totalScore);
+
+                alert('Desafio concluído!');
+            });
+        });
+    </script>
 </body>
 </html>

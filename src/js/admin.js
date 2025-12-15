@@ -75,3 +75,53 @@ function closeModal() {
 
 // Carrega ao abrir a página
 loadUsers();
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para carregar dados reais
+    function loadAdminData() {
+        const totalScore = localStorage.getItem('totalScore') || 0;
+        const completedChallenges = JSON.parse(localStorage.getItem('completedChallenges')) || {
+            websites: 0,
+            desktop: 0,
+            backend: 0
+        };
+
+        console.log('Pontuação Total:', totalScore);
+        console.log('Desafios Completos:', completedChallenges);
+
+        // Exemplo: Atualizar tabela ou exibir dados na página
+        // document.getElementById('someElement').textContent = totalScore;
+    }
+
+    // Chamar a função ao carregar a página
+    loadAdminData();
+});
+
+async function loadLoginAttempts() {
+    try {
+        const response = await fetch("http://localhost:8080/api/admin/logs");
+        const logs = await response.json();
+
+        const tbody = document.querySelector("#loginAttemptsTable tbody");
+        tbody.innerHTML = "";
+
+        logs.forEach(log => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${log.id}</td>
+                <td>${log.username}</td>
+                <td>${log.ip}</td>
+                <td>${log.success ? "Sucesso" : "Falha"}</td>
+                <td>${new Date(log.timestamp).toLocaleString()}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    } catch (err) {
+        console.error("Erro ao carregar logs de tentativas de login:", err);
+    }
+}
+
+// Carregar logs ao abrir a página
+document.addEventListener('DOMContentLoaded', function() {
+    loadLoginAttempts();
+});

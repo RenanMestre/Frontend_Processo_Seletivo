@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase 3 - Backend</title>
+    <title>Fase 3 - DevSec</title>
     <link rel="stylesheet" href="src/css/candidato.css"> <!-- Certifique-se de ter o CSS -->
     <script src="src/js/candidato.js"></script>
 </head>
@@ -31,53 +31,41 @@
     <section id="trilha-devsecops" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Fase 3: Backend</h2>
-                <p>Começei no front, depois passei pro back, agora sou Full!</p>
+                <h2>Fase 4: Desenvolvimento e security</h2>
+                <p>Saber desenvolver todos sabem, mas garantir a segurança, isso é essencial!</p>
             </div>
 
             <!-- História e Importância do DevSecOps -->
             <div class="devsecops-historia">
-                <h2>🌍 Banco de dados</h2>
+                <h2>🌍 Análise de segurança em codificação</h2>
                 <p>
-                    Muitos sistemas atualmente estão vindo com proposta fullstack, podemos dizer que frontend ou backend apenas se tornou impossível, quer alcançar 
-                    as estrelas? Deverá então ser FullStack! <br>
-                    A linguagem mais usada para a criação de banco de dados é o SQL, contendo os diversos bancos como MySQL, PostgreSQL SQLSlite dentre outros.
+                    O desenvolvimento de sistemas é comum, uma prática que muitos aprendem de forma fácil e rápida
+                    colocando de forma rápida muitos sistemas no ar acrescentando mais ao seu portfólio, mas 
+                    um ciber criminoso pode facilmente tirar sua alegria por vazar informações não protegidas e 
+                    até custear um resgate em troca de não manchar o nome da empresa. <br>
+                    Sabendo disso a ScriptHadder possuí profissionais competentes nessa área para garantir monitoramento e 
+                    segurança a sistemas, mas é dever de cada programador saber o necessário e básico de segurança da informação! 
                     <br>
 
                     <br>
                     <strong>DESAFIO</strong>
                     <br>
-                    Pesquise um pouco mais sobre banco de dados e com qual finalidade você deve usar o PostgreSQL ou o MySQL ou o SQLLite, 
-                    sabendo disso, desenvoolva um banco de dados com o aplicativo com o <a href="https://www.postgresql.org/download/">PostgreSQL</a>. 
-                    <br>
-                    O desenvolvedor backend está desenvolvendo as APIs em PHP, mas solicitou que você crie um banco de dados com as seguintes 
-                    descrições: 
-                    <br>
-                    <br>
-                    . Nome do banco de dados: <strong>hospital</strong>
-                    <br>
-                    . Tebelas a serem criadas: <strong>login, pacientes e médicos</strong>
-                    <br>
-                    . Linhas da tabela pacientes: <strong>id, nome e cpf</strong>
-                    <br>
-                    . Linhas da tabela login: <strong>id, usaername e password</strong>
-                    <br>
-                    . Linhas da tabela médicos: <strong>id, nome e crm</strong>
-                    <br>
-                    . Dados a serem inseridos apenas na tabela login: <strong>joao@gmail.com, P@ciente@#$%2.0</strong>
+                    Você está em um grupo trabalhando em um projeto de um cliente, um sistema web, porém seu cargo no projeto é analista de 
+                    segurança, mais conhecido como DevSec, analise o código enviado pela equipe de frontend e backend e veja possíveis vulnerabilidades 
+                    e corrija todas elas que você encontrar. Seja rápido e esperto, a sua <strong>reputação</strong> e da ScriptHadder está em <strong>suas mãos</strong>!
                     <br>
                     <br>
                     Você será <strong>avaliado</strong> em:
                     <br>
-                    . Desenvolvimento de banco de dados;
+                    . Desenvolvimento de sistemas;
                     <br>
                     . Desenvolvimento de segurança em código;
                     <br>
-                    . Auxilío na equipe de backend;
+                    . Desenvolvimento com segurança;
                     <br>
-                    . Pesquisa e aprofundamento em programação;
+                    . Versatilidade em linguagem de programação;
                     <br>
-                    . Curiosidade;
+                    . DevSecOps e AppSec;
                     <br>
                     . Qualidade de código;
                     <div class=""></div>
@@ -119,8 +107,9 @@
             </style>
             <div class="devsecops-importancia">
                 <h2>⚡ Material de apoio</h2>
-                <a href="https://www.youtube.com/watch?v=v-8Hidj4U4c" target="_blank">Instalando o PostgreSQL e primeiros passos</a>
-                <a href="https://www.youtube.com/watch?v=S7r4zQX769g" target="_blank">Criando e inserindo informações em tabelas no banco de dados</a>
+                <a href="https://www.wiz.io/pt-br/academy/application-security/secure-coding-best-practices" target="_blank">O que é boas práticas de codificação?</a>
+                <a href="https://www.alura.com.br/artigos/dotenv-gerenciando-variaveis-ambiente?srsltid=AfmBOopYVblyCAUF7lpDUW6pt4mSI-2InGLJdanD0VuWWEpzNvVd7DLB" target="_blank">Arquivos de segurança</a>
+                <a href="https://github.com/ScriptHadder/Backend_processo_seletivo">Repositório</a>
             </div>
 
             <!-- Passo a Passo Atualizado -->
@@ -212,106 +201,78 @@
             </style>
             <section id="passo-a-passo" class="steps">
                 <div class="container">
-                    <h2>Passo a Passo para Configurar o PostgreSQL</h2>
+                    <h2>Passo a Passo para Resolver o Desafio</h2>
 
                     <div class="step">
-                        <i class="step-icon fas fa-download"></i>
+                        <i class="step-icon fas fa-search"></i>
                         <div>
-                            <h3>1. Instalar o PostgreSQL</h3>
+                            <h3>1. Identificar Problemas no Código</h3>
                             <p>
-                                Para começar, instale o PostgreSQL no seu sistema:
+                                Analise o código existente e identifique os seguintes problemas:
                                 <ul>
-                                    <li>Acesse o site oficial do PostgreSQL: <a href="https://www.postgresql.org/download/" target="_blank">https://www.postgresql.org/download/</a>.</li>
-                                    <li>Escolha a versão adequada para o seu sistema operacional e siga as instruções de instalação.</li>
-                                    <li>Durante a instalação, configure uma senha para o usuário <code>postgres</code>.</li>
+                                    <li>Presença de credenciais sensíveis (senhas, chaves de API) diretamente no código.</li>
+                                    <li>Ausência de um arquivo <code>.env</code> para gerenciar variáveis de ambiente.</li>
+                                    <li>Exposição de endpoints de API sem proteção adequada.</li>
                                 </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="step">
-                        <i class="step-icon fas fa-database"></i>
+                        <i class="step-icon fas fa-file-alt"></i>
                         <div>
-                            <h3>2. Criar o Banco de Dados</h3>
+                            <h3>2. Criar e Configurar o Arquivo <code>.env</code></h3>
                             <p>
-                                Após instalar o PostgreSQL, crie o banco de dados:
+                                Substitua as credenciais sensíveis no código por variáveis de ambiente. Siga os passos:
                                 <ul>
-                                    <li>Acesse o terminal ou o <code>pgAdmin</code>.</li>
-                                    <li>Execute o comando: <code>CREATE DATABASE hospital;</code></li>
-                                    <li>Certifique-se de que o banco de dados foi criado com sucesso.</li>
+                                    <li>Crie um arquivo chamado <code>.env</code> na raiz do projeto.</li>
+                                    <li>Adicione as variáveis de ambiente necessárias, como <code>API_KEY</code> e <code>DB_PASSWORD</code>.</li>
+                                    <li>Certifique-se de adicionar o arquivo <code>.env</code> ao <code>.gitignore</code> para evitar que ele seja versionado.</li>
                                 </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="step">
-                        <i class="step-icon fas fa-table"></i>
+                        <i class="step-icon fas fa-code"></i>
                         <div>
-                            <h3>3. Criar as Tabelas</h3>
+                            <h3>3. Refatorar o Código</h3>
                             <p>
-                                No banco de dados <code>hospital</code>, crie as tabelas necessárias:
+                                Atualize o código para utilizar as variáveis de ambiente configuradas no arquivo <code>.env</code>:
                                 <ul>
-                                    <li>Conecte-se ao banco de dados com o comando: <code>\c hospital</code>.</li>
-                                    <li>Crie a tabela <code>login</code>:<br>
-                                        <code>
-                                            CREATE TABLE login (
-                                                id SERIAL PRIMARY KEY,
-                                                username VARCHAR(255) NOT NULL,
-                                                password VARCHAR(255) NOT NULL
-                                            );
-                                        </code>
-                                    </li>
-                                    <li>Crie a tabela <code>pacientes</code>:<br>
-                                        <code>
-                                            CREATE TABLE pacientes (
-                                                id SERIAL PRIMARY KEY,
-                                                nome VARCHAR(255) NOT NULL,
-                                                cpf VARCHAR(14) NOT NULL
-                                            );
-                                        </code>
-                                    </li>
-                                    <li>Crie a tabela <code>medicos</code>:<br>
-                                        <code>
-                                            CREATE TABLE medicos (
-                                                id SERIAL PRIMARY KEY,
-                                                nome VARCHAR(255) NOT NULL,
-                                                crm VARCHAR(20) NOT NULL
-                                            );
-                                        </code>
-                                    </li>
+                                    <li>Use bibliotecas como <code>dotenv</code> para carregar as variáveis de ambiente no código.</li>
+                                    <li>Substitua as credenciais expostas por chamadas às variáveis de ambiente.</li>
+                                    <li>Garanta que nenhuma informação sensível permaneça hardcoded.</li>
                                 </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="step">
-                        <i class="step-icon fas fa-user-plus"></i>
+                        <i class="step-icon fas fa-lock"></i>
                         <div>
-                            <h3>4. Inserir Dados na Tabela <code>login</code></h3>
+                            <h3>4. Proteger Endpoints de API</h3>
                             <p>
-                                Insira os dados iniciais na tabela <code>login</code>:
+                                Implemente medidas de segurança para proteger os endpoints da API:
                                 <ul>
-                                    <li>Execute o comando:<br>
-                                        <code>
-                                            INSERT INTO login (username, password)
-                                            VALUES ('joao@gmail.com', 'P@ciente@#$%2.0');
-                                        </code>
-                                    </li>
-                                    <li>Verifique se os dados foram inseridos corretamente com o comando: <code>SELECT * FROM login;</code></li>
+                                    <li>Adicione autenticação e autorização para acessar os endpoints.</li>
+                                    <li>Utilize tokens seguros (como JWT) para validar as requisições.</li>
+                                    <li>Evite expor informações sensíveis nos endpoints de resposta.</li>
                                 </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="step">
-                        <i class="step-icon fas fa-check-circle"></i>
+                        <i class="step-icon fas fa-vial"></i>
                         <div>
-                            <h3>5. Validar a Configuração</h3>
+                            <h3>5. Testar e Validar</h3>
                             <p>
-                                Certifique-se de que tudo está funcionando corretamente:
+                                Após realizar as alterações, teste o sistema para garantir que:
                                 <ul>
-                                    <li>Teste a conexão com o banco de dados usando um cliente como <code>pgAdmin</code> ou <code>psql</code>.</li>
-                                    <li>Verifique se as tabelas foram criadas e os dados inseridos corretamente.</li>
+                                    <li>As credenciais sensíveis não estão mais expostas.</li>
+                                    <li>O arquivo <code>.env</code> está sendo utilizado corretamente.</li>
+                                    <li>Os endpoints da API estão protegidos e funcionando como esperado.</li>
                                 </ul>
                             </p>
                         </div>
@@ -320,12 +281,13 @@
                     <div class="step">
                         <i class="step-icon fas fa-book"></i>
                         <div>
-                            <h3>6. Documentar e Compartilhar</h3>
+                            <h3>6. Documentar e Finalizar</h3>
                             <p>
-                                Documente o processo para facilitar o entendimento da equipe:
+                                Documente as alterações realizadas e inclua instruções para configurar o arquivo <code>.env</code>:
                                 <ul>
-                                    <li>Crie um arquivo <code>README.md</code> com as instruções de configuração do banco de dados.</li>
-                                    <li>Inclua exemplos de comandos e possíveis erros comuns.</li>
+                                    <li>Crie um arquivo <code>README.md</code> com as instruções de configuração.</li>
+                                    <li>Inclua exemplos de variáveis de ambiente no arquivo <code>.env.example</code>.</li>
+                                    <li>Garanta que o sistema esteja pronto para ser entregue ou implantado.</li>
                                 </ul>
                             </p>
                         </div>
@@ -378,16 +340,15 @@
                     }
                 </style>
                 <div class="concluir-container">
-                    <button class="btn-concluir" id="concluirDesafio">Concluir</button>
+                    <button class="btn-concluir" onclick="concluirEtapa()">Concluir</button>
                     <div class="progress-bar-container" style="display: none;">
                         <div class="progress-bar" style="width: 0%;"></div>
                     </div>
                 </div>
 
                 <div class="btn-group">
-                    <a href="desktop.html" class="btn-secondary">⬅ Voltar</a>
-                    <a href="devsec.html" class="btn-primary">➡ Fase 4</a>
-                    <a href="menu.html" class="btn-primary">Início</a>
+                    <a href="backend.html" class="btn-secondary">⬅ Voltar</a>
+                    <a href="menu.html" class="btn-primary">Terminar</a>
                 </div>
             </div>
         </div>
@@ -402,7 +363,7 @@
             <div class="footer-links">
                 <a href="https://scripthadder.com.br">Sobre nós</a>
                 <a href="termos.html">Política de Privacidade</a>
-                <a href="termos.html">Termos de Uso</a>
+                <a href="termos.html">Termos de uso</a>
             </div>
             <div class="footer-copy">
                 <p>&copy; 2025 ScriptHadder. Todos os direitos reservados.</p>
@@ -414,6 +375,20 @@
     <script>
         function concluirEtapa() {
             alert('Conclusão salva com sucesso!');
+
+            // Atualizar progresso no localStorage
+            const completedChallenges = JSON.parse(localStorage.getItem('completedChallenges')) || {
+                websites: 0,
+                desktop: 0,
+                backend: 0
+            };
+            completedChallenges.backend += 1; // Incrementa o desafio DevSec como backend
+            localStorage.setItem('completedChallenges', JSON.stringify(completedChallenges));
+
+            const totalScore = parseInt(localStorage.getItem('totalScore') || '0', 10) + 200; // Adiciona 200 pontos
+            localStorage.setItem('totalScore', totalScore);
+
+            // Atualizar barra de progresso visual
             const progressBarContainer = document.querySelector('.progress-bar-container');
             const progressBar = document.querySelector('.progress-bar');
             progressBarContainer.style.display = 'block';
@@ -421,23 +396,6 @@
                 progressBar.style.width = '100%';
             }, 100);
         }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('concluirDesafio').addEventListener('click', function() {
-                const completedChallenges = JSON.parse(localStorage.getItem('completedChallenges')) || {
-                    websites: 0,
-                    desktop: 0,
-                    backend: 0
-                };
-                completedChallenges.backend += 1;
-                localStorage.setItem('completedChallenges', JSON.stringify(completedChallenges));
-
-                const totalScore = parseInt(localStorage.getItem('totalScore') || '0', 10) + 200;
-                localStorage.setItem('totalScore', totalScore);
-
-                alert('Desafio concluído!');
-            });
-        });
     </script>
 </body>
 </html>

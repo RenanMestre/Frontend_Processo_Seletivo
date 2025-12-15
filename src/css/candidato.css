@@ -165,81 +165,6 @@ section {
   font-size: 1.15rem;
 }
 
-/* ==== FOOTER ==== */
-  .footer {
-  background: #001717;
-  padding: 60px 40px 30px;
-  }
-
-  .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
-  }
-
-  .footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  }
-
-  .footer-logo h3 {
-  margin: 0;
-  color: white;
-  font-size: 35px;
-  }
-
-  .footer-logo h3 span {
-  color: rgb(25, 183, 189);
-  margin-bottom: 15px;
-  }
-
-  .footer-logo img {
-  display: relative;
-  height: auto;
-  width: 45px;
-  }
-
-  .footer-section h4 {
-  color: #56e2e7;
-  margin-bottom: 15px;
-  }
-
-  .footer-section p,
-  .footer-section a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.95rem;
-  }
-
-  .footer-section ul {
-  list-style: none;
-  padding: 0;
-  }
-
-  .footer-section ul li {
-  margin-bottom: 8px;
-  }
-
-  .social-links a {
-  color: #56e2e7;
-  margin-right: 15px;
-  font-size: 1.5rem;
-  transition: 0.3s ease;
-  }
-
-  .social-links a:hover {
-  color: #fff;
-  }
-
-  .footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  color: #777;
-  font-size: 0.9rem;
-  }
-
 /* ==== BOTÃO VOLTAR AO TOPO ==== */
 .topo button {
   position: fixed;
@@ -320,6 +245,38 @@ section {
     background: #e5e7eb;
     color: #111827;
     transform: translateY(-2px);
+}
+
+/* Estilo para o footer */
+.footer {
+    background: #0f2027;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #56e2e7;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    color: #56e2e7;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #56e2e7;
+}
+
+.footer-copy p {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 10px;
 }
 
 

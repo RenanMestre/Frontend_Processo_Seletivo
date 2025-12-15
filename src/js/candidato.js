@@ -1,5 +1,5 @@
 async function logout() {
-    const response = await fetch(process.env.API_LOGOUT, {
+    const response = await fetch("http://72.60.61.93:8080/api/logout", {
         method: "POST",
         credentials: "include"
     });
