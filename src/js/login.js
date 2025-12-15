@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const errorDiv = document.getElementById('loginError');
     const errorMsg = document.getElementById('loginErrorMsg');
     try {
-        const response = await fetch("https://72.60.61.93:8080/api/login", {
+        const response = await fetch("https://api.scripthadder.com.br:8080/api/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
