@@ -1,5 +1,5 @@
 async function logout() {
-    const response = await fetch("http://localhost:8080/api/logout", {
+    const response = await fetch("https://localhost:8080/api/logout", {
         method: "POST",
         credentials: "include"
     });
@@ -14,7 +14,7 @@ async function logout() {
 
 async function loadUsers() {
     try {
-        const response = await fetch("http://localhost:8080/api/users");
+        const response = await fetch("https://localhost:8080/api/users");
         const users = await response.json();
 
         const tbody = document.querySelector("#userTable tbody");
@@ -46,7 +46,7 @@ async function addUser() {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/api/register", {
+        const response = await fetch("https://localhost:8080/api/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password, tipo })
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadLoginAttempts() {
     try {
-        const response = await fetch("http://localhost:8080/api/admin/logs");
+        const response = await fetch("https://localhost:8080/api/admin/logs");
         const logs = await response.json();
 
         const tbody = document.querySelector("#loginAttemptsTable tbody");
