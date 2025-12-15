@@ -1,5 +1,5 @@
 async function logout() {
-    const response = await fetch("https://api.scripthadder.com.br:8080/api/logout", {
+    const response = await fetch("https://api.scripthadder.com.br/api/logout", {
         method: "POST",
         credentials: "include"
     });
@@ -14,7 +14,7 @@ async function logout() {
 
 async function loadUsers() {
     try {
-        const response = await fetch("https://api.scripthadder.com.br:8080/api/users");
+        const response = await fetch("https://api.scripthadder.com.br/api/users");
         const users = await response.json();
 
         const tbody = document.querySelector("#userTable tbody");
